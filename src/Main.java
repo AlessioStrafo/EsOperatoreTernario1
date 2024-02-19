@@ -20,9 +20,12 @@
 public class Main {
     public static void main(String[] args) {
         for (int i = 1; i <= 100; i++) {
-            String checkValue = i % 5 == 0 ? "FizzBuzz" : "Buzz";
+            //String checkValue = i % 5 == 0 ? "FizzBuzz" : "Buzz";
             System.out.println("Valore: " + i);
-            System.out.println(checkValue);
+            System.out.println(checkValue(i));
         }
+    }
+    private static String checkValue(int value) {
+        return value % 5 == 0 ? "FizzBuzz" : "Buzz";
     }
 }
